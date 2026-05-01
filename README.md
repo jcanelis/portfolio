@@ -5,7 +5,7 @@
 ## Stack
 
 - React
-- [Gatsby] (https://github.com/gatsbyjs/gatsby)
+- [Gatsby](https://github.com/gatsbyjs/gatsby)
 - [Contentful](https://www.contentful.com/)
 - [Netlify](https://www.netlify.com/)
 - [Styled Components](https://styled-components.com/)
@@ -29,7 +29,7 @@ yarn
 npm start
 ```
 
-### Add fonts to src/fonts/
+### Add web font files to static/fonts/
 
 - Fira Mono
 - ITC Avant GardeGothic
