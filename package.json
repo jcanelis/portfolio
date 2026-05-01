@@ -1,0 +1,52 @@
+{
+  "name": "portfolio",
+  "description": "John's design portfolio site.",
+  "scripts": {
+    "build": "npm run  && gatsby build",
+    "build-test": "netlify build",
+    "clean": "rm -rf node_modules && rm yarn.lock && rm -rf public",
+    "develop": "gatsby develop",
+    "format": "prettier --write *.{js,json} src/**/*.js",
+    "lint": "eslint src/ *.{js,json}",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "fonts:fetch": "wget -O fonts.zip $SECRET_FONTS_URL; unzip -j fonts.zip -d ./static/fonts/; rm fonts.zip",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "deploy": "cd ../ && netlify deploy --prod"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^2.1.4",
+    "gatsby": "^5.16.1",
+    "gatsby-plugin-image": "^3.16.0",
+    "gatsby-plugin-react-helmet": "^6.16.0",
+    "gatsby-plugin-sharp": "^5.16.0",
+    "gatsby-plugin-sitemap": "^6.16.0",
+    "gatsby-plugin-styled-components": "^6.16.0",
+    "gatsby-remark-embed-video": "^3.2.1",
+    "gatsby-remark-images-contentful": "^6.16.0",
+    "gatsby-remark-prismjs": "^7.16.0",
+    "gatsby-remark-responsive-iframe": "^6.16.0",
+    "gatsby-source-contentful": "^8.17.0",
+    "gatsby-source-filesystem": "^5.16.0",
+    "gatsby-transformer-remark": "^6.16.0",
+    "gatsby-transformer-sharp": "^5.16.0",
+    "gatsby-transformer-sqip": "^5.16.0",
+    "prismjs": "^1.30.0",
+    "prop-types": "^15.8.1",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^6.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^10.2.0",
+    "eslint-plugin-react": "^7.37.5",
+    "gatsby-cli": "^5.16.0",
+    "netlify-cli": "^24.11.3",
+    "prettier": "^3.8.3"
+  },
+  "author": "John Canelis",
+  "license": "MIT",
+  "private": true
+}
