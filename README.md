@@ -1,4 +1,5 @@
-## John's portfolio website
+## John's portfolio
+### A simple website pulling in content from a headless CMS.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1cacac62-6cb6-40d4-9a51-bf85e4f1fe31/deploy-status)](https://app.netlify.com/sites/fluffy-begonia-91bdec/deploys)
 
@@ -23,7 +24,7 @@ export SECRET_FONTS_URL=*******
 ### Install node and dependencies
 
 ```shell
-git clone git@github.com:jcanelis/design24.git
+git clone git@github.com:jcanelis/portfolio.git
 nvm use 24.14.1
 yarn
 npm start
