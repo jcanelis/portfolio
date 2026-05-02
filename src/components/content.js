@@ -206,7 +206,8 @@ const Wrapper = styled.div`
   }
 
   hr {
-    margin: ${base * 8}px auto;
+    margin: ${base * 8}px auto ${base * 0}px;
+    width: 50%;
     border: none;
     border-top: ${base / 2}px solid rgba(0, 0, 0, 1);
   }
@@ -219,8 +220,7 @@ const Wrapper = styled.div`
   }
 
   blockquote {
-    // background-color: blue;
-    margin: ${base * 10}px auto;
+    margin: ${base * 10}px auto ${base * 4}px;
     font-size: 55px;
     line-height: ${base * 18}px;
     text-align: center;
