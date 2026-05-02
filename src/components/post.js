@@ -25,6 +25,16 @@ const Article = styled.article`
   row-gap: 0;
 `
 
+const VideoPlayer = styled.video`
+  width: 100%;
+  height: auto;
+  margin: 0 0 ${baseUnit * 12}px;
+
+  @media (max-width: 800px) {
+    margin: 0;
+  }
+`
+
 const Header = styled.header`
   grid-column: 1 / 9;
   display: grid;
@@ -106,12 +116,15 @@ const Post = ({ pageContext }) => {
         </GridWrap>
 
         <GridWrap columns="1/9" row="4" direction="row">
-          <Hero>
+          {/*<Hero>
             <a href={post.featuredImage.publicUrl}>
               <GatsbyImage image={image} alt={post.featuredImage.description} />
             </a>
             <figcaption>{post.featuredImage.description}</figcaption>
-          </Hero>
+          </Hero>*/}
+          <VideoPlayer playsInline autoPlay muted loop>
+            <source src={"https://videos.ctfassets.net/17vnaejc25yr/1mXBp8z0c0KV0V9xviF3eY/1d9bef078d4b87905dd8c59e56b5a49f/700_F_919094047_bQXZ5OTwxZVwTEutjk0QJFmJu5gi6njL_ST.mp4"} type="video/mp4" />
+          </VideoPlayer>
         </GridWrap>
       </Header>
       
