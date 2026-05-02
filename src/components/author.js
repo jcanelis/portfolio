@@ -58,11 +58,7 @@ const Author = ({ author, timestamp, updatedAt }) => {
   return (
     <Wrapper>
       <Name>
-        <span>by</span>{" "}
-        <a href="https://www.google.com/search?q=john+canelis+linkedin&oq=john+canelis+linkedin">
-          {author.name}
-        </a>
-        , <span>{author.title}</span>
+        <span>by </span>{author.name}, <span>{author.title}</span>
       </Name>
       <Time dateTime={timestamp}>{updatedAt}</Time>
     </Wrapper>

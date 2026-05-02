@@ -2,6 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
+// Hooks
+import getPosts from "../hooks/getPosts"
+
 // Utility
 import Constants from "../other/constants"
 const base = Constants.baseUnit
@@ -13,6 +16,7 @@ const Wrapper = styled.div`
   grid-column: 1 / 9;
   display: flex;
   justify-content: space-between;
+  letter-spacing: 0.3px;
 
   .activeNav {
     color: rgba(255, 255, 255, 1);
@@ -67,22 +71,35 @@ const Item = styled.div`
   }
 `
 
-const links = [
-  { url: "/", text: "John" },
-  { url: "/cadre", text: "Cadre" },
-  { url: "/trackqueen", text: "TrackQueen" },
-]
+const Navigation = () => {
+  const posts = getPosts()
 
-const Navigation = () => (
-  <Wrapper>
-    {links.map(({ url, text }) => (
-      <Item key={url}>
-        <Link to={url} activeClassName={"activeNav"}>
-          {text}
-        </Link>
-      </Item>
-    ))}
-  </Wrapper>
-)
+  let pages = posts.map(({ node }) => { 
+    return (
+      { 
+        id: node.id, 
+        title: node.title, 
+        slug: node.slug 
+      })
+  })
+
+  pages.unshift({
+    id: "index",
+    title: "John",
+    slug: "",
+  })
+
+  return (
+    <Wrapper>
+      {pages.map( ({ id, slug, title }) => (
+        <Item key={id}>
+          <Link to={`/${slug}`} activeClassName={"activeNav"}>
+            {title}
+          </Link>
+        </Item>
+      ))}
+    </Wrapper>
+  )
+}
 
 export default Navigation

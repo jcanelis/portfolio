@@ -15,33 +15,32 @@ import Article from "../components/article"
 import Promo from "../components/promo"
 
 const Wrapper = styled.div`
-  padding: 0 ${base * 12}px ${base * 12}px;
+  display: grid;
   grid-column: 1 / 9;
   grid-template-columns: repeat(8, 1fr);
-  display: grid;
   grid-gap: ${base * 8}px;
-  // background-color: pink;
+  padding: 0 ${base * 12}px ${base * 12}px;
 
   @media (max-width: 1200px) {
-    padding: 0 ${base * 6}px ${base * 16}px;
     grid-gap: ${base * 8}px;
+    padding: 0 ${base * 6}px ${base * 16}px;
   }
 `
 
 const Container = styled.div`
-  padding: ${base * 8}px 0 0;
   display: flex;
   flex-direction: row;
-
   align-items: center;
   justify-content: center;
-  gap: ${base * 8}px;
-  // background-color: blue;
 
-  @media (max-width: 1200px) {
+  p {
+  font-family:  "Leitura Roman Italic";
+  }
+
+  @media (max-width: 1600px) {
     flex-wrap: wrap;
-    padding: 0;
     gap: ${base * 16}px;
+    padding: 0;
   }
 `
 
@@ -58,7 +57,7 @@ const IndexPage = () => {
             font="ITC Avant Garde Gothic Bold"
             uppercase={true}
             fontFeatures={true}
-            headline="john canelis"
+            headline="John Canelis"
             alignment="center"
             tagline="Design samples 🎨 👨‍🍳"
           />
@@ -72,7 +71,7 @@ const IndexPage = () => {
           </Container>
         </GridWrap>
 
-        <GridWrap row="9/12" columns="1/9" justify="center">
+        <GridWrap row="9" columns="1/9" justify="center">
           <Container>
             <p>
               <a href="https://github.com/jcanelis">GitHub</a>
@@ -83,8 +82,16 @@ const IndexPage = () => {
             <p>
               <a href="https://johnnyc.xyz/">Photo site</a>
             </p>
+
           </Container>
         </GridWrap>
+
+        <GridWrap row="10 / 12" columns="1/9" justify="center">
+          <Container>
+            <p>This site was built using React with Gatsby, Contentful, and Netlify. Typography used includes Fira Mono, ITC Avant GardeGothic, and Leitura. You can view the source code on <a href="https://github.com/jcanelis/portfolio">GitHub</a>.</p>
+          </Container>
+        </GridWrap>
+
       </Wrapper>
     </>
   )

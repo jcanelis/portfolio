@@ -33,7 +33,7 @@ npm start
 ### Add web font files to static/fonts/
 
 - Fira Mono
-- ITC Avant GardeGothic
+- ITC Avant Garde Gothic
 - Leitura Display
 - Leitura News
 - Leitura Sans
