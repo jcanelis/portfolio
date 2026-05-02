@@ -168,7 +168,8 @@ const Wrapper = styled.div`
   }
 
   span.gatsby-resp-image-background-image {
-    border-radius: ${base * 12}px;
+    border-radius: ${base * 8}px;
+    overflow: hidden;
 
     @media (max-width: 800px) {
       border-radius: ${base * 8}px;
@@ -176,8 +177,8 @@ const Wrapper = styled.div`
   }
 
   img.gatsby-resp-image-image {
-    border-radius: ${base * 12}px;
-
+    border-radius: ${base * 8}px;
+    
     @media (max-width: 800px) {
       border-radius: ${base * 8}px;
     }

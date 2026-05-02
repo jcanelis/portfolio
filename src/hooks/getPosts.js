@@ -30,14 +30,6 @@ export default function getPosts() {
             author {
               name
               title
-              image {
-                gatsbyImageData(
-                  width: 160
-                  quality: 75
-                  placeholder: BLURRED
-                  formats: [AUTO, WEBP]
-                )
-              }
             }
             createdAt(formatString: "MMMM Do, YYYY")
           }

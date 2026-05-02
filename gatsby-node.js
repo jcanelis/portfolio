@@ -18,7 +18,7 @@ exports.createPages = async ({ graphql, actions }) => {
               }
               gatsbyImageData(
                 width: 1400
-                quality: 80
+                quality: 100
                 placeholder: BLURRED
                 formats: [AUTO, WEBP]
               )
@@ -30,14 +30,6 @@ exports.createPages = async ({ graphql, actions }) => {
             author {
               name
               title
-              image {
-                gatsbyImageData(
-                  width: 160
-                  quality: 75
-                  placeholder: BLURRED
-                  formats: [AUTO, WEBP]
-                )
-              }
             }
             body {
               childMarkdownRemark {

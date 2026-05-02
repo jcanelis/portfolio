@@ -40,7 +40,6 @@ const Hero = styled.figure`
   flex-direction: column;
   gap: ${baseUnit * 4}px;
   padding: 0 ${baseUnit * 8}px;
-  // background-color: pink;
 
   @media (max-width: 800px) {
     padding: 0 ${baseUnit * 6}px;
@@ -48,13 +47,13 @@ const Hero = styled.figure`
 
   .gatsby-image-wrapper {
     border-radius: ${baseUnit * 12}px;
-    // box-shadow:
-    //   rgba(0, 0, 0, 0.02) 0px 2.8px 2.2px,
-    //   rgba(0, 0, 0, 0.027) 0px 6.7px 5.3px,
-    //   rgba(0, 0, 0, 0.035) 0px 12.5px 10px,
-    //   rgba(0, 0, 0, 0.043) 0px 22.3px 17.9px,
-    //   rgba(0, 0, 0, 0.05) 0px 41.8px 33.4px,
-    //   rgba(0, 0, 0, 0.07) 0px 100px 80px;
+    box-shadow:
+      rgba(0, 0, 0, 0.02) 0px 2.8px 2.2px,
+      rgba(0, 0, 0, 0.027) 0px 6.7px 5.3px,
+      rgba(0, 0, 0, 0.035) 0px 12.5px 10px,
+      rgba(0, 0, 0, 0.043) 0px 22.3px 17.9px,
+      rgba(0, 0, 0, 0.05) 0px 41.8px 33.4px,
+      rgba(0, 0, 0, 0.07) 0px 100px 80px;
 
     @media (max-width: 800px) {
       border-radius: ${baseUnit * 8}px;
@@ -115,7 +114,7 @@ const Post = ({ pageContext }) => {
           </Hero>
         </GridWrap>
       </Header>
-
+      
       <Section>
         <Content row="6" content={post.body.childMarkdownRemark.html} />
       </Section>

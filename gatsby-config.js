@@ -49,7 +49,7 @@ module.exports = {
               withWebp: true,
               loading: "lazy",
               backgroundColor: "transparent",
-              wrapperStyle: "border-radius: 48px",
+              // wrapperStyle: "border-radius: 48px",
             },
           },
         ],

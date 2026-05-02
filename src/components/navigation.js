@@ -16,6 +16,7 @@ const Wrapper = styled.div`
   grid-column: 1 / 9;
   display: flex;
   justify-content: space-between;
+  letter-spacing: 0.3px;
 
   .activeNav {
     color: rgba(255, 255, 255, 1);

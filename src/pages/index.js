@@ -33,6 +33,10 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
 
+  p {
+  font-family:  "Leitura Roman Italic";
+  }
+
   @media (max-width: 1600px) {
     flex-wrap: wrap;
     gap: ${base * 16}px;
@@ -53,7 +57,7 @@ const IndexPage = () => {
             font="ITC Avant Garde Gothic Bold"
             uppercase={true}
             fontFeatures={true}
-            headline="john canelis"
+            headline="John Canelis"
             alignment="center"
             tagline="Design samples 🎨 👨‍🍳"
           />
@@ -67,7 +71,7 @@ const IndexPage = () => {
           </Container>
         </GridWrap>
 
-        <GridWrap row="9/12" columns="1/9" justify="center">
+        <GridWrap row="9" columns="1/9" justify="center">
           <Container>
             <p>
               <a href="https://github.com/jcanelis">GitHub</a>
@@ -78,8 +82,16 @@ const IndexPage = () => {
             <p>
               <a href="https://johnnyc.xyz/">Photo site</a>
             </p>
+
           </Container>
         </GridWrap>
+
+        <GridWrap row="10 / 12" columns="1/9" justify="center">
+          <Container>
+            <p>This site was built using React with Gatsby, Contentful, and Netlify. Typography used includes Fira Mono, ITC Avant GardeGothic, and Leitura. You can view the source code on <a href="https://github.com/jcanelis/portfolio">GitHub</a>.</p>
+          </Container>
+        </GridWrap>
+
       </Wrapper>
     </>
   )
