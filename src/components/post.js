@@ -116,14 +116,8 @@ const Post = ({ pageContext }) => {
         </GridWrap>
 
         <GridWrap columns="1/9" row="4" direction="row">
-          {/*<Hero>
-            <a href={post.featuredImage.publicUrl}>
-              <GatsbyImage image={image} alt={post.featuredImage.description} />
-            </a>
-            <figcaption>{post.featuredImage.description}</figcaption>
-          </Hero>*/}
           <VideoPlayer playsInline autoPlay muted loop>
-            <source src={"https://videos.ctfassets.net/17vnaejc25yr/1mXBp8z0c0KV0V9xviF3eY/1d9bef078d4b87905dd8c59e56b5a49f/700_F_919094047_bQXZ5OTwxZVwTEutjk0QJFmJu5gi6njL_ST.mp4"} type="video/mp4" />
+            <source src={post.video.url} type="video/mp4" />
           </VideoPlayer>
         </GridWrap>
       </Header>

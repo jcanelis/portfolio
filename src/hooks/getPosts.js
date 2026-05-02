@@ -2,7 +2,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 export default function getPosts() {
   const data = useStaticQuery(graphql`
-    query getPostss {
+    query getPosts {
       allContentfulPost(sort: { publishDate: DESC }) {
         edges {
           node {
@@ -12,7 +12,6 @@ export default function getPosts() {
             tagline
             timeline
             publishDate
-            cleanDate: updatedAt(formatString: "MMMM Do, YYYY")
             featuredImage {
               id
               publicUrl
@@ -27,11 +26,6 @@ export default function getPosts() {
                 formats: [AUTO, WEBP]
               )
             }
-            author {
-              name
-              title
-            }
-            createdAt(formatString: "MMMM Do, YYYY")
           }
         }
       }

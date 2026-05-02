@@ -9,6 +9,10 @@ exports.createPages = async ({ graphql, actions }) => {
             title
             tagline
             tags
+            video {
+              url
+              description
+            }
             featuredImage {
               id
               publicUrl
