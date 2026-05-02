@@ -15,33 +15,28 @@ import Article from "../components/article"
 import Promo from "../components/promo"
 
 const Wrapper = styled.div`
-  padding: 0 ${base * 12}px ${base * 12}px;
+  display: grid;
   grid-column: 1 / 9;
   grid-template-columns: repeat(8, 1fr);
-  display: grid;
   grid-gap: ${base * 8}px;
-  // background-color: pink;
+  padding: 0 ${base * 12}px ${base * 12}px;
 
   @media (max-width: 1200px) {
-    padding: 0 ${base * 6}px ${base * 16}px;
     grid-gap: ${base * 8}px;
+    padding: 0 ${base * 6}px ${base * 16}px;
   }
 `
 
 const Container = styled.div`
-  padding: ${base * 8}px 0 0;
   display: flex;
   flex-direction: row;
-
   align-items: center;
   justify-content: center;
-  gap: ${base * 8}px;
-  // background-color: blue;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1600px) {
     flex-wrap: wrap;
-    padding: 0;
     gap: ${base * 16}px;
+    padding: 0;
   }
 `
 

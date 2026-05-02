@@ -17,14 +17,7 @@ const Header = styled.header`
     height: ${base * 72}px;
     top: 0;
     transition: 0.2s ease all;
-    border-radius: ${base * 12}px;
-    // box-shadow:
-    //   rgba(0, 0, 0, 0.02) 0px 2.8px 2.2px,
-    //   rgba(0, 0, 0, 0.027) 0px 6.7px 5.3px,
-    //   rgba(0, 0, 0, 0.035) 0px 12.5px 10px,
-    //   rgba(0, 0, 0, 0.043) 0px 22.3px 17.9px,
-    //   rgba(0, 0, 0, 0.05) 0px 41.8px 33.4px,
-    //   rgba(0, 0, 0, 0.07) 0px 100px 80px;
+    border-radius: ${base * 8}px;
 
     &:hover {
       top: -8px;
@@ -39,9 +32,11 @@ const Header = styled.header`
     flex: 1;
     height: ${base * 72}px;
   }
+
 `
 
 const Wrapper = styled.article`
+  max-width: 440px;
   margin: 0;
   padding: 0;
   display: flex;
